@@ -1,0 +1,85 @@
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #69F7BE;
+  --color-text-main: #000000;
+  --color-primary: #FFFF00;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+
+.divider {
+  padding: 0 1rem;
+}
+/******************************************************************************
+END Glitch hello-app default styles
+******************************************************************************/
+
+body {
+  font-family: var(--font-family);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+main {
+  width: 80ch;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+label {
+  display: block;
+  margin-top: 2rem;
+}
+
+
+textarea {
+  display: block;
+  margin-top: 1rem;
+  border: none;
+  background: #F1F1F1;
+  border-radius: 4px;
+  font-family: monospace;
+  padding: 1em;
+}
+
+button {
+  padding: 1em 2em;
+  background-color: blue;
+  color: white;
+  border-radius: 4px;
+  font-weight: 700;
+}
